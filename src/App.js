@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-
+import ecouteurBluetooth from './ecouteur bluetooth.jpg';
+import ReactPlayer from 'react-player';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{border:"solid 5px red" , maxWidth:"100vw"}}>
+       <h1 className="title red">Med Amine Hamdi</h1>
+
+<br/>
+<div className="pics">
+<img  src={ecouteurBluetooth} alt='ecouteur' ></img>
+
+<br/>
+
+<img  src="/chargeur sans fil.jpg" ></img>
+</div>
+<br/>
+<br/>
+
+<div className="vid"> 
+<ReactPlayer  url="https://youtu.be/_Zgx2QMfXVg?list=PLmYBIzXGbEzLhBgbGa7ucqGJr5RgmzjWr" />
+</div>
+ 
+
+
     </div>
+    
   );
 }
 
